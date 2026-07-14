@@ -1,1 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>GoalWithMe</title>
+  <meta
+    name="description"
+    content="GoalWithMe is an accountability app designed to help people make commitments, track progress, and follow through with support from an accountability partner."
+  >
+
+  <style>
+    :root {
+      --purple: #6f4bd8;
+      --light-purple: #a98be8;
+      --navy: #1f2440;
+      --text: #34364a;
+      --muted: #6f7285;
+      --background: #f8f8fc;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 28px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      font-size: 1.5rem;
+      font-weight: 750;
+      color: var(--navy);
+      letter-spacing: -0.03em;
+    }
+
+    .brand span {
+      color: var(--purple);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 80px 24px 100px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 18px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: #eee9fb;
+      color: var(--purple);
+      font-size: 0.9rem;
+      font-weight: 650;
+    }
+
+    h1 {
+      margin: 0 auto 24px;
+      max-width: 760px;
+      color: var(--navy);
+      font-size: clamp(2.8rem, 7vw, 5rem);
+      line-height: 1.05;
+      letter-spacing: -0.05em;
+    }
+
+    .highlight {
+      color: var(--purple);
+    }
+
+    .intro {
+      max-width: 680px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      color: var(--muted);
+    }
+
+    .message {
+      max-width: 720px;
+      margin: 60px auto 0;
+      padding: 34px;
+      background: var(--white);
+      border-radius: 24px;
+      box-shadow: 0 12px 40px rgba(38, 35, 70, 0.08);
+    }
+
+    .message h2 {
+      margin-top: 0;
+      color: var(--navy);
+      font-size: 1.7rem;
+    }
+
+    .message p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    footer {
+      padding: 28px 24px 40px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding-top: 55px;
+      }
+
+      .message {
+        padding: 26px 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="brand">Goal<span>WithMe</span></div>
+  </header>
+
+  <main>
+    <div class="eyebrow">Accountability that follows through</div>
+
+    <h1>
+      Make a commitment.<br>
+      <span class="highlight">GoalWithMe.</span>
+    </h1>
+
+    <p class="intro">
+      GoalWithMe helps you set clear commitments, track your progress,
+      and stay accountable with support from someone you trust.
+    </p>
+
+    <section class="message">
+      <h2>Built around real accountability</h2>
+
+      <p>
+        Set a commitment. Choose an accountability partner. Check in as you
+        make progress. When you are finished, submit your commitment for
+        verification and celebrate the follow-through.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 GoalWithMe. All rights reserved.
+  </footer>
+
+</body>
+</html>
