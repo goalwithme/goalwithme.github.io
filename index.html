@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>GoalWithMe</title>
+
   <meta
     name="description"
-    content="GoalWithMe is an accountability app designed to help people make commitments, track progress, and follow through with support from an accountability partner."
+    content="GoalWithMe is an accountability app owned and operated by JC Behavioral Consulting INC."
   >
 
   <style>
@@ -75,7 +76,7 @@
     main {
       max-width: 900px;
       margin: 0 auto;
-      padding: 80px 24px 100px;
+      padding: 80px 24px 90px;
       text-align: center;
     }
 
@@ -110,6 +111,22 @@
       color: var(--muted);
     }
 
+    .company-line {
+      margin: 22px auto 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .company-line a {
+      color: var(--purple);
+      font-weight: 650;
+      text-decoration: none;
+    }
+
+    .company-line a:hover {
+      text-decoration: underline;
+    }
+
     .message {
       max-width: 720px;
       margin: 60px auto 0;
@@ -131,14 +148,14 @@
     }
 
     .site-links {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 0 auto 70px;
       padding: 0 24px;
     }
 
     .link-grid {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
       gap: 14px;
     }
 
@@ -193,12 +210,6 @@
       color: var(--purple);
     }
 
-    @media (max-width: 800px) {
-      .link-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
-
     @media (max-width: 600px) {
       header {
         align-items: flex-start;
@@ -212,10 +223,6 @@
       .message {
         padding: 26px 22px;
       }
-
-      .link-grid {
-        grid-template-columns: 1fr;
-      }
     }
   </style>
 </head>
@@ -223,9 +230,12 @@
 <body>
 
   <header>
-    <a class="brand" href="index.html">Goal<span>WithMe</span></a>
+    <a class="brand" href="index.html">
+      Goal<span>WithMe</span>
+    </a>
 
     <nav>
+      <a href="company.html">Company</a>
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
       <a href="safety.html">Safety</a>
@@ -234,7 +244,10 @@
   </header>
 
   <main>
-    <div class="eyebrow">Accountability that follows through</div>
+
+    <div class="eyebrow">
+      Accountability that follows through
+    </div>
 
     <h1>
       Make a commitment.<br>
@@ -246,7 +259,13 @@
       and stay accountable with support from someone you trust.
     </p>
 
+    <p class="company-line">
+      GoalWithMe is owned and operated by
+      <a href="company.html">JC Behavioral Consulting INC</a>.
+    </p>
+
     <section class="message">
+
       <h2>Built around real accountability</h2>
 
       <p>
@@ -254,12 +273,19 @@
         make progress. When you are finished, submit your commitment for
         verification and celebrate the follow-through.
       </p>
+
     </section>
+
   </main>
 
   <section class="site-links">
 
     <div class="link-grid">
+
+      <a class="link-card" href="company.html">
+        <strong>Company</strong>
+        <span>Learn about JC Behavioral Consulting INC.</span>
+      </a>
 
       <a class="link-card" href="privacy.html">
         <strong>Privacy Policy</strong>
@@ -288,6 +314,7 @@
   <footer>
 
     <div class="footer-links">
+      <a href="company.html">Company</a>
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
       <a href="safety.html">Safety</a>
